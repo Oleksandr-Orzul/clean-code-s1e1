@@ -4,16 +4,19 @@
   color: #333;
   font-family: lato, sans-serif;
 }
+
 .header {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
+
 .header__img {
   width: 100%;
 }
-.header .more-inf {
+
+.header .more-info {
   font-family: fantasy, cursive;
 }
 
@@ -22,27 +25,32 @@
      text-align: center;
   }
 }
-.main {
+
+.container {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
+
 .task {
   width: 56%;
   display: inline-block;
   flex-grow: 1
 }
-.task-wrapper {
+
+.new-task__wrapper {
   display: flex;
 }
-ul {
+
+section {
   margin: 0;
   padding: 0px;
 }
-li, 
+
 h3 {
   list-style: none;
 }
+
 input,
 button{
   outline: none;
@@ -57,12 +65,13 @@ button{
   font-family: Lato, sans-serif;
   cursor: pointer;
 }
+
 .button:hover {
   color: #3a3a3a;
 }
+
 /* Heading */
-.heading,
-.new-task__label {
+.heading{
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -71,7 +80,8 @@ button{
   margin: 0;
   text-transform: uppercase;
 }
-.input__text{
+
+.input-text{
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -83,21 +93,23 @@ button{
   font-family: lato, sans-serif;
   color: #888;
 }
-.input__text:focus {
+
+.input-text:focus {
   color: #333;
 }
 
 /* New Task */
-.new-task__label {
+.new-task__heading {
   display: block;
   margin: 0 0 20px;
 }
+
 .new-task__input{
   width: 318px;
 }
 
 /* Task list */
-.li {
+.item {
   overflow: hidden;
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -105,43 +117,48 @@ button{
   justify-content: space-between;
   align-items: center;
 }
-.li > * {
+
+.item > * {
   vertical-align: middle;
 }
 
 .checkbox {
   margin: 0 10px;
 }
+
 .label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
-.li > .input__text  {
+
+.item > .input-text  {
   width: 226px;
 }
+
 .delete__img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
+
 .delete__img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-.completed__label {
+.completed .label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-.li .input__text {
+.item .input-text {
   display: none;
 }
 
-.edit-mode .input__text {
+.edit-mode .input-text {
   display: inline-block;
   width: 224px;
 }
